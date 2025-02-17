@@ -1,0 +1,53 @@
+/* Asegurar que los botones estén sobre la página */
+.whatsapp-float,
+.subir-float {
+    position: fixed !important;
+    /* Garantiza que esté flotante */
+    z-index: 9999 !important;
+    /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe57;
+}
+
+/* Estilos para el botón flotante de subir */
+.subir-float {
+    bottom: 90px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    /* Oculto al inicio */
+}
+
+.subir-float:hover {
+    background-color: #0056b3;
+}
