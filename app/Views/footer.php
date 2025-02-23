@@ -106,7 +106,7 @@ document.getElementById("btnSubir").addEventListener("click", function() {
                             class="fab fa-github"></i></a>
                     <a href="<?= esc($perfil['instagram']) ?>" class="text-white me-2" target="_blank"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="<?= esc($perfil['telefono']) ?>youtube" class="text-white me-2" target="_blank"><i
+                    <a href="<?= esc($perfil['youtube']) ?>youtube" class="text-white me-2" target="_blank"><i
                             class="fab fa-youtube"></i></a>
                 </p>
             </div>
