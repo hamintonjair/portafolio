@@ -30,7 +30,7 @@
                         <a class="nav-link" href="<?= base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('videos') ?>">Videos</a>
+                        <a class="nav-link" href="<?= base_url('videos') ?>">Proyectos</a>
                     </li>
 
                 </ul>
