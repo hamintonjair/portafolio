@@ -1,5 +1,4 @@
-<a href="https://api.whatsapp.com/send?phone=57<?= esc($perfil['telefono']) ?> ?>" class="whatsapp-float"
-    target="_blank">
+<a href="https://api.whatsapp.com/send?phone=57<?= esc($perfil['telefono']) ?>" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
