@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\ProyectoModel;
 use App\Models\PerfilModel;
+
 class Home extends BaseController
 {
-  
+
     public function index()
     {
         $perfilModel = new PerfilModel();
@@ -23,16 +25,15 @@ class Home extends BaseController
         return view('contactos');
     }
 
-    public function videos()
+    public function proyectos()
     {
         $perfilModel = new PerfilModel();
         $proyectoModel = new ProyectoModel();
-
         $data['perfil'] = $perfilModel->getPerfil();
         $data['proyectos'] = $proyectoModel->getProyectos();
-
         echo view('header');
-        echo view('videos', $data);
+        echo view('proyectos', $data);
         echo view('footer');
+
     }
 }

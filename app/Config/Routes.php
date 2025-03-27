@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('videos', 'Home::videos');
+$routes->get('proyectos', 'Home::proyectos');
 
 $routes->get('/login', 'AuthController::login');
 $routes->post('/auth/doLogin', 'AuthController::doLogin');
@@ -22,5 +22,4 @@ $routes->group('dashboard', ['filter' => 'auth'], function ($routes) {
     $routes->get('proyectos/eliminar/(:num)', 'DashboardController::eliminar/$1');
     $routes->post('proyectos/update/(:num)', 'DashboardController::update/$1');
     $routes->get('proyectos/obtener/(:num)', 'DashboardController::obtener/$1');
-    
 });
